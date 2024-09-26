@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-26T18:53:30.895404" rpa="false" schemaversion="5">
+<suite id="s1" name="RigisTest" source="C:\Users\MDM\Downloads\automate-future-skill\testcases\RigisTest.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-09-26T18:53:31.304181" level="INFO">Opening browser 'chrome' to base url 'https://futureskill.co/'.</msg>
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-26T18:53:31.304181" elapsed="2.481388"/>
+</kw>
+<test id="s1-t1" name="สมัครสมาชิกของ Future Skill" line="12">
+<kw name="When user login to future skill platform with ${emailRegis} and ${first_name} and ${last_name} and ${phone} and ${password} and ${confirmpassword}" owner="RegisPageKeywords" source_name="When user login to future skill platform with ${email} and ${firstname} and ${lastname} and ${phone} and ${password} and ${confirmpassword}">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-26T18:53:33.790852" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
+<msg time="2024-09-26T18:53:33.974862" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-26T18:53:33.976369" level="FAIL">Element with locator 'xpath=//button[text()="สมัครสมาชิก"]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-26T18:53:33.789579" elapsed="0.190838">Element with locator 'xpath=//button[text()="สมัครสมาชิก"]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-26T18:53:35.981875" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T18:53:35.981875" elapsed="2.309682"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-26T18:53:33.789579" elapsed="4.501978"/>
+</kw>
+<arg>xpath=//button[text()="สมัครสมาชิก"]</arg>
+<status status="PASS" start="2024-09-26T18:53:33.788570" elapsed="4.502987"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T18:53:38.294847" level="INFO">Typing text 'cadaporn@gmail.com' into text field 'name=email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T18:53:38.293833" elapsed="0.637619"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-26T18:53:38.292590" elapsed="0.639890"/>
+</kw>
+<arg>name=email</arg>
+<arg>${email}</arg>
+<status status="PASS" start="2024-09-26T18:53:38.292590" elapsed="0.639890"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T18:53:38.933005" level="INFO">Typing text 'cadana' into text field 'name=firstName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T18:53:38.933005" elapsed="0.177095"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-26T18:53:38.933005" elapsed="0.177095"/>
+</kw>
+<arg>name=firstName</arg>
+<arg>${firstname}</arg>
+<status status="PASS" start="2024-09-26T18:53:38.932480" elapsed="0.177620"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T18:53:39.111404" level="INFO">Typing text 'nongphone' into text field 'name=lastName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T18:53:39.111404" elapsed="0.183930"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-26T18:53:39.111404" elapsed="0.183930"/>
+</kw>
+<arg>name=lastName</arg>
+<arg>${lastname}</arg>
+<status status="PASS" start="2024-09-26T18:53:39.111404" elapsed="0.183930"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T18:53:39.297334" level="INFO">Typing text '0886399900' into text field 'name=phoneNumber'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T18:53:39.296334" elapsed="0.180823"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-26T18:53:39.296334" elapsed="0.180823"/>
+</kw>
+<arg>name=phoneNumber</arg>
+<arg>${phone}</arg>
+<status status="PASS" start="2024-09-26T18:53:39.295334" elapsed="0.181823"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T18:53:39.479173" level="INFO">Typing text '1234567AAs!' into text field 'name=newPassword'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T18:53:39.478157" elapsed="0.196335"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-26T18:53:39.478157" elapsed="0.196335"/>
+</kw>
+<arg>name=newPassword</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-09-26T18:53:39.477157" elapsed="0.197335"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-26T18:53:39.675505" level="INFO">Typing text '1234567AAs!' into text field 'name=confirmPassword'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T18:53:39.675505" elapsed="0.191417"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-26T18:53:39.674492" elapsed="0.192430"/>
+</kw>
+<arg>name=confirmPassword</arg>
+<arg>${confirmpassword}</arg>
+<status status="PASS" start="2024-09-26T18:53:39.674492" elapsed="0.192430"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-26T18:53:39.868926" level="INFO">Clicking element 'xpath=//input[@type="checkbox"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T18:53:39.868926" elapsed="0.097744"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-26T18:53:39.868926" elapsed="0.098747"/>
+</kw>
+<arg>xpath=//input[@type="checkbox"]</arg>
+<status status="PASS" start="2024-09-26T18:53:39.867922" elapsed="0.099751"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-26T18:53:39.968679" level="INFO">Clicking element 'xpath=//button[text()="สมัครสมาชิก"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-26T18:53:39.968679" elapsed="0.128613"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-26T18:53:39.968679" elapsed="0.129610"/>
+</kw>
+<arg>xpath=//button[text()="สมัครสมาชิก"]</arg>
+<status status="PASS" start="2024-09-26T18:53:39.967673" elapsed="0.130616"/>
+</kw>
+<status status="PASS" start="2024-09-26T18:53:33.788570" elapsed="6.309719"/>
+</kw>
+<kw name="When Wait until element is ready to read text" owner="CommonKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-26T18:53:40.100058" elapsed="2.247776"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${expected_text}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=Expected text "${expected_text}" not found in element "${locator}" after ${timeout}</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-09-26T18:53:42.347834" elapsed="0.034718"/>
+</kw>
+<arg>xpath=//h6[@class='text-center']</arg>
+<arg>ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์</arg>
+<status status="PASS" start="2024-09-26T18:53:40.098289" elapsed="2.285498"/>
+</kw>
+<status status="PASS" start="2024-09-26T18:53:33.786565" elapsed="8.597222"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-26T18:53:42.385135" elapsed="2.348003"/>
+</kw>
+<status status="PASS" start="2024-09-26T18:53:30.895404" elapsed="13.837734"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="RigisTest">RigisTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-26T18:53:31.267130" level="ERROR">Error in file 'C:\Users\MDM\Downloads\automate-future-skill\keywords\CommonKeywords.robot' on line 17: Creating keyword 'Wait until page contains element then verify text' failed: Keyword with same name defined multiple times.</msg>
+</errors>
+</robot>
